@@ -60,7 +60,9 @@ def download_programs():
 
 	secondeFrame.resizable(0, 0)
 
-	label2 = Label(secondeFrame, text = 'Installing: ', bg='white', fg='black')
+	secondeFrame.iconbitmap('docs/favicon.ico')
+
+	label2 = Label(secondeFrame, text = 'Installing: ', bg='white', fg='#AA1D36')
 
 	secondeFrame.config(bg = 'white')
 	secondeFrame.config()

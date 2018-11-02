@@ -24,6 +24,8 @@ def mainFrame():
 	firstFrame.config(bg = 'white')
 	firstFrame.config()
 
+	firstFrame.iconbitmap('docs/favicon.ico')
+
 	for i in range(9):
 		var.append(IntVar())
 
