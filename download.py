@@ -25,13 +25,10 @@ def app_download(var, firstFrame):
 
 	firstFrame.destroy()
 	
-	try:
-		start_frame = threading.Thread(target= download_programs)
-		start_frame.start()
-		if not os.path.exists(path):
-			os.mkdir(path)	
-	except:
-		label1.config(text='Error!')
+	start_frame = threading.Thread(target= download_programs)
+	start_frame.start()
+	if not os.path.exists(path):
+		os.mkdir(path)	
 	time.sleep(1)
 	for i in range(len(programs_array)):
 		if var[i].get() == 1:
@@ -40,6 +37,12 @@ def app_download(var, firstFrame):
 		print(i.name)
 		label2.config(text='Downloading: ' + i.name)
 		wget.download(i.url, path)
+	files = os.listdir(path)
+	os.chdir(path)
+	for i in files:
+		label1.config(text = 'Please Wait!')
+		label2.config(text='Installing: ' + i)
+		os.system('"' + i + '"')
 	label2.config(text = '')
 	label1.config(text='Download completed!')
 
