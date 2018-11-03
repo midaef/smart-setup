@@ -30,6 +30,12 @@ It includes the following applications:
 #### Download window
 ![Download](https://raw.githubusercontent.com/midaef/smart-setup/master/docs/screenshots/download.png)
 
+#### Installing window
+![Installing](https://raw.githubusercontent.com/midaef/smart-setup/master/docs/screenshots/installing.png)
+
+#### Completed window
+![Completed](https://raw.githubusercontent.com/midaef/smart-setup/master/docs/screenshots/comp.png)
+
 ## Programmers:
 [midaef.ru](http://midaef.ru) 
 
